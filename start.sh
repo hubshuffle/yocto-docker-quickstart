@@ -92,7 +92,7 @@ else
         ${arg_x11_forward} \
         ${arg_privileged} \
         --volume "${PWD}/home":/home/yocto \
-        hubshuffle/yocto:1.0 \
+        hubshuffle/yocto:1.2 \
         sudo bash -c "groupadd -g 7777 yocto && useradd --password ${empty_password_hash} --shell /bin/bash -u ${UID} -g 7777 \
         yocto && usermod -aG sudo yocto && usermod -aG users yocto && cd /opt/yocto && su yocto"
 fi
