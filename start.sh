@@ -47,7 +47,7 @@ set_arg_net() {
 
 run_additional_instance=false
 # parse input arguments
-while getopts ":hxnpa" opt; do
+while getopts ":hxnpe" opt; do
   case ${opt} in
     h )
       usage
@@ -63,7 +63,7 @@ while getopts ":hxnpa" opt; do
     p )
       set_arg_privileged
       ;;
-    a )
+    e )
       run_additional_instance=true
       ;;
     \? )
